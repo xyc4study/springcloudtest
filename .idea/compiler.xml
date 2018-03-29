@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka_center" />
+        <module name="feign_client" />
+        <module name="springapp1" />
+        <module name="springcloudtest" />
+        <module name="zuul_client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka_center" target="1.8" />
+      <module name="feign_client" target="1.8" />
+      <module name="springapp1" target="1.8" />
+      <module name="springcloudtest" target="1.5" />
+      <module name="zuul_client" target="1.8" />
+      <module name="zuul_gate" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

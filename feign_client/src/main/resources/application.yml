@@ -1,0 +1,29 @@
+server:
+  port: 8002
+eureka:
+  client:
+    #eureka client刷新本地缓存时间
+    #默认30s
+    registryFetchIntervalSeconds: 5
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+#eureka客户端ribbon刷新时间
+#默认30s
+ribbon:
+  ServerListRefreshInterval: 5000
+
+feign:
+  hystrix:
+    enabled: true
+#hystrix:
+#  command:
+#    HelloClient#toHello():
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 500
+#      circuitBreaker:
+#        requestVolumeThreshold: 3
+spring:
+  application:
+    name: feign-client
